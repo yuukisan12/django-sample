@@ -14,4 +14,4 @@ ADD . /code
 RUN pip install -r requirements.txt
 
 # ローカルサーバーでの起動
-CMD python3 manage.py runserver 0.0.0.0:8002
+CMD python3 manage.py runserver 0.0.0.0:8080
