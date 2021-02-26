@@ -17,7 +17,7 @@ RUN chgrp -R 0 /code && \
 RUN pip install -r requirements.txt
 
 USER 1001
-EXPOSE 8080
+EXPOSE 8000
 
 # ローカルサーバーでの起動
-CMD python3 manage.py runserver
+CMD python3 manage.py runserver 0.0.0.0:8000
